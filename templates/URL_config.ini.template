@@ -1,0 +1,28 @@
+﻿# ==============================================================================
+# 直播间监控关注列表 (URL_config.ini)
+# 书写说明：
+# 1. 一行一个直播间地址，支持格式：
+#    - 网页链接,主播: 主播别名
+#    - 指定画质,网页链接,主播: 主播别名 (例如: 超清,https://live.douyin.com/...,主播: 示例)
+# 2. 开头带 '#' 号表示暂时停止该直播间的监控录制，但保留链接记录
+# 3. 程序支持热更新：在程序运行中直接修改并保存该文件，下轮循环将自动加载新增主播
+# ==============================================================================
+
+# --- 抖音 (Douyin) 示例 ---
+# 方式 1: 直播间直链
+https://live.douyin.com/971223901932,主播: 示例主播A
+# 方式 2: 用户主页短链或长链（开播时自动解析）
+https://www.douyin.com/user/MS4wLjABAAAAIvsFVoWW9pOISdEqCIdKOhifttPnWSUOUJTMxcBAtkY7--Njuem7LbAZfaaXbzMn,主播: 示例主播B
+
+# --- 快手 (Kuaishou) 示例 ---
+# https://live.kuaishou.com/u/xxxxxx,主播: 快手主播
+
+# --- B站 (Bilibili) 示例 ---
+# https://live.bilibili.com/320,主播: B站官方
+
+# --- 虎牙 / 斗鱼 示例 ---
+# https://www.huya.com/123456,主播: 虎牙主播
+# https://www.douyu.com/654321,主播: 斗鱼主播
+
+# --- TikTok (需在 config.ini 中开启代理) ---
+# https://www.tiktok.com/@example/live,主播: TikTok主播
